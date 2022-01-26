@@ -23,8 +23,10 @@ const fetchData = async () => {
     ]);
 
     return {
-        usd: priceCoinBase,
-        brl: priceBitcoinTrade
+        bitcoin: {
+            usd: priceCoinBase,
+            brl: priceBitcoinTrade
+        }
     }
 }
 
